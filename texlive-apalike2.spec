@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/apalike2/apalike2.bst
+# catalog-date 2009-11-09 13:03:38 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-apalike2
 Version:	20091109
 Release:	1
@@ -33,6 +39,7 @@ Described as a "local adaptation" of apalike.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/bibtex/bst/apalike2/apalike2.bst
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,3 +50,5 @@ Described as a "local adaptation" of apalike.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
