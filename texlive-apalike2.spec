@@ -41,3 +41,18 @@ Described as a "local adaptation" of apalike.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20091109-2
++ Revision: 749286
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20091109-1
++ Revision: 717843
+- texlive-apalike2
+- texlive-apalike2
+- texlive-apalike2
+- texlive-apalike2
+- texlive-apalike2
+
