@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-apalike2
 Version:	20091109
-Release:	6
+Release:	7
 Summary:	Bibliography style that approaches APA requirements
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2/apalike2.bst
