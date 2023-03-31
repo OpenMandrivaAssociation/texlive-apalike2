@@ -1,6 +1,6 @@
 Name:		texlive-apalike2
 Version:	54080
-Release:	1
+Release:	2
 Summary:	Bibliography style that approaches APA requirements
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2/apalike2.bst
