@@ -3,7 +3,7 @@ Version:	54080
 Release:	2
 Summary:	Bibliography style that approaches APA requirements
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2/apalike2.bst
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2/apalike2.bst
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apalike2.r%{version}.tar.xz
 BuildArch:	noarch
