@@ -1,37 +1,21 @@
-Name:		texlive-apalike2
-Version:	54080
-Release:	2
+%global tl_name apalike2
+%global tl_revision 76790
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	Bibliography style that approaches APA requirements
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2/apalike2.bst
-License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apalike2.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/apalike2
+License:	knuth
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/apalike2.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-Described as a "local adaptation" of apalike.
+Described as a "local adaptation" of apalike (which is part of the base
+BibTeX distribution).
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/bibtex/bst/apalike2/apalike2.bst
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar bibtex %{buildroot}%{_texmfdistdir}
